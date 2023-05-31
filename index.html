@@ -17,7 +17,7 @@
             margin-left: 50px;
         }
 
-        section h2 {
+        .summary-section h2 {
             margin-left: 33%;
             margin-top: 100px;
         }
@@ -43,12 +43,13 @@
         article {
             margin: 50px 50px 50px 50px
         }
-        article div {
+
+        article section {
             padding: 20px;
             border-bottom: 2px solid gray;
         }
 
-        article div h2 {
+        article  h2 {
             text-align: center;
             margin-top: 50px;
         }
@@ -56,6 +57,7 @@
         article div img {
             margin-left: 50px;
         }
+
         footer {
             text-align: center;
             margin-top: 50px;
@@ -67,6 +69,7 @@
     <header>
         <h1> New 7 Wonders of the World</h1>
     </header>
+
     <nav>
         <ul>
             <li><a href="#great-wall-of-china">Great Wall of China.</a></li>
@@ -78,8 +81,10 @@
             <li><a href="#Christ the Redeemer">Christ the Redeemer.</a></li>
         </ul>
     </nav>
-    <section>
+
+    <section class="summary-section">
         <h2>Summary</h2>
+
         <table>
             <tr>
                 <th>Wonder</th>
@@ -87,6 +92,7 @@
                 <th>Image</th>
                 <th>Year</th>
             </tr>
+
             <tr>
                 <td>Great Wall of China.</td>
                 <td>China</td>
@@ -94,6 +100,7 @@
                         alt="greatwall" height="auto" width="auto"></td>
                 <td>700 BC</td>
             </tr>
+
             <tr>
                 <td>Petra</td>
                 <td>Ma'an, Jordan</td>
@@ -101,6 +108,7 @@
                         alt="Petra" height="auto" width="auto"></td>
                 <td>312 BC</td>
             </tr>
+
             <tr>
                 <td>Colosseum.</td>
                 <td>Rome, Italy</td>
@@ -108,6 +116,7 @@
                         alt="Colosseum" height="auto" width="auto"></td>
                 <td>AD 80</td>
             </tr>
+
             <tr>
                 <td>Chichén Itzá</td>
                 <td>Yucatán, Mexico</td>
@@ -115,6 +124,7 @@
                         alt="Chichén Itzá" height="auto" width="auto"></td>
                 <td>AD 600</td>
             </tr>
+
             <tr>
                 <td>Machu Picchu</td>
                 <td>Cuzco Region, Peru</td>
@@ -122,6 +132,7 @@
                         alt="Machu Picchu" height="auto" width="auto"></td>
                 <td>AD 1450</td>
             </tr>
+
             <tr>
                 <td>Taj Mahal</td>
                 <td>Agra, India</td>
@@ -129,6 +140,7 @@
                         alt="Taj Mahal" height="auto" width="auto"></td>
                 <td>AD 1643</td>
             </tr>
+
             <tr>
                 <td>Christ the Redeemer</td>
                 <td>Rio de Janeiro, Brazil</td>
@@ -138,10 +150,11 @@
             </tr>
         </table>
     </section>
+
     <article>
-        <div>
+        <section>
             <h2 id="great-wall-of-china">Great Wall of China</h2>
-            <h3>Description</h3>
+
             <p>The Great Wall of China (traditional Chinese: 萬里長城; simplified Chinese: 万里长城; pinyin: Wànlǐ Chángchéng,
                 literally "ten thousand li long wall") is a series of fortifications that were built across the
                 historical northern borders of ancient Chinese states and Imperial China as protection against various
@@ -165,16 +178,22 @@
                 generally
                 recognized as one of the most impressive architectural feats in history.[8]
             </p>
-            <img src="https://media.audleytravel.com/-/media/images/home/north-asia-and-russia/china/country-guides/great-wall-of-china/istock157197045lanterns7x5.webp?q=60&w=1600&h=1142"
-                alt="Great Wall of China" height="300px" width="400px">
-            <img src="https://media.audleytravel.com/-/media/images/home/north-asia-and-russia/china/country-guides/great-wall-of-china/istock_521468906_great_wall_huangyaguan_section_7x5.webp?q=60&w=1600&h=1142"
-                alt="Great Wall of China" height="300px" width="400px">
-            <img src="https://cdn.audleytravel.com/1600/1141/60/1316379-jinshanling--beijing.webp"
-                alt="Great Wall of China" height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="great-wall-of-china-gallery">
+                <img src="https://media.audleytravel.com/-/media/images/home/north-asia-and-russia/china/country-guides/great-wall-of-china/istock157197045lanterns7x5.webp?q=60&w=1600&h=1142"
+                    alt="Great Wall of China" height="300px" width="400px">
+
+                <img src="https://media.audleytravel.com/-/media/images/home/north-asia-and-russia/china/country-guides/great-wall-of-china/istock_521468906_great_wall_huangyaguan_section_7x5.webp?q=60&w=1600&h=1142"
+                    alt="Great Wall of China" height="300px" width="400px">
+
+                <img src="https://cdn.audleytravel.com/1600/1141/60/1316379-jinshanling--beijing.webp"
+                    alt="Great Wall of China" height="300px" width="400px">
+            </div>
+        </section>
+
+        <section>
             <h2 id="Petra">Petra</h2>
-            <h3>Description</h3>
+
             <p>Petra (Arabic: ٱلْبَتْراء, romanized: Al-Batraʾ; Ancient Greek: Πέτρα, "Rock", Nabataean: 𐢛𐢚𐢓𐢈‎),
                 originally known to its inhabitants as Raqmu or Raqēmō,[3][4] is a historic and archaeological city in
                 southern Jordan. It is adjacent to the mountain of Jabal Al-Madbah, in a basin surrounded by mountains
@@ -191,16 +210,22 @@
                 when its Al-Khazneh structure – believed to be the mausoleum of Nabataean king Aretas IV – was
                 constructed, and its population peaked at an estimated 20,000 inhabitants.[10]
             </p>
-            <img src="https://cdn1.matadornetwork.com/blogs/1/2016/03/petra-jordan25-1200x900.jpg" alt="Petra"
-                height="300px" width="400px">
-            <img src="https://i.pinimg.com/originals/bd/0f/e6/bd0fe6460459be79d720edd2d0209c13.jpg" alt="Petra"
-                height="300px" width="400px">
-            <img src="https://media.worldnomads.com/Explore/middle-east/petra-hard-way-jase-wilson.jpg" alt="Petra"
-                height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="petra-gallery">
+                <img src="https://cdn1.matadornetwork.com/blogs/1/2016/03/petra-jordan25-1200x900.jpg" alt="Petra"
+                    height="300px" width="400px">
+
+                <img src="https://i.pinimg.com/originals/bd/0f/e6/bd0fe6460459be79d720edd2d0209c13.jpg" alt="Petra"
+                    height="300px" width="400px">
+
+                <img src="https://media.worldnomads.com/Explore/middle-east/petra-hard-way-jase-wilson.jpg" alt="Petra"
+                    height="300px" width="400px">
+            </div>
+        </section>
+
+       <section>
             <h2 id="Colosseum">Colosseum</h2>
-            <h3>Description</h3>
+
             <p>The Colosseum (/ˌkɒləˈsiːəm/ KOL-ə-SEE-əm; Italian: Colosseo [kolosˈsɛːo]) is an elliptical amphitheatre
                 in the centre of the city of Rome, Italy, just east of the Roman Forum. It is the largest ancient
                 amphitheatre ever built, and is still the largest standing amphitheatre in the world, despite its age.
@@ -218,16 +243,22 @@
                 later reused for such purposes as housing, workshops, quarters for a religious order, a fortress, a
                 quarry, and a Christian shrine.
             </p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/2560px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg"
-                alt="Colosseum" height="300px" width="400px">
-            <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/4f323dc0c716527162188be4aa9ede96-Role%20in%20the%20Christian%20World.jpg"
-                alt="Colosseum" height="300px" width="400px">
-            <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_18/3469691/210503-rome-colosseum-al-0724.jpg"
-                alt="Colosseum" height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="colosseum-gallery">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/2560px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg"
+                    alt="Colosseum" height="300px" width="400px">
+
+                <img src="https://cdn-imgix.headout.com/microbrands-content-image/image/4f323dc0c716527162188be4aa9ede96-Role%20in%20the%20Christian%20World.jpg"
+                    alt="Colosseum" height="300px" width="400px">
+
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_18/3469691/210503-rome-colosseum-al-0724.jpg"
+                    alt="Colosseum" height="300px" width="400px">
+            </div>
+        </section>
+
+        <section>
             <h2 id="Chichén Itzá">Chichén Itzá</h2>
-            <h3>Description</h3>
+
             <p>Chichén Itzá[nb 1] (often spelled Chichen Itza in English and traditional Yucatec Maya) was a large
                 pre-Columbian city built by the Maya people of the Terminal Classic period. The archeological site is
                 located in Tinúm Municipality, Yucatán State, Mexico.[1]
@@ -247,16 +278,22 @@
                 under the monuments had been privately owned until 29 March 2010, when it was purchased by the state of
                 Yucatán.[nb 2]
             </p>
-            <img src="https://www.solosophie.com/wp-content/uploads/2023/02/Chichen-Itza_2122199747.jpeg.webp"
-                alt="Chichén Itzá" height="300px" width="400px">
-            <img src="https://media.istockphoto.com/id/481272289/photo/el-castillo-of-chichen-itza-at-sunset-mexico.jpg?s=612x612&w=0&k=20&c=vp5jlz0SdiCl4ow_xRUPDgZ-09TdRdWuzE4NW7v130c="
-                alt="Chichén Itzá" height="300px" width="400px">
-            <img src="https://apstatic.lomastravel.com.mx/800/_640a1b562fed5__6406123aa0128_chichen_itza_oct_20226.jpg"
-                alt="Chichén Itzá" height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="chichén-itzá-gallery">
+                <img src="https://www.solosophie.com/wp-content/uploads/2023/02/Chichen-Itza_2122199747.jpeg.webp"
+                    alt="Chichén Itzá" height="300px" width="400px">
+
+                <img src="https://media.istockphoto.com/id/481272289/photo/el-castillo-of-chichen-itza-at-sunset-mexico.jpg?s=612x612&w=0&k=20&c=vp5jlz0SdiCl4ow_xRUPDgZ-09TdRdWuzE4NW7v130c="
+                    alt="Chichén Itzá" height="300px" width="400px">
+
+                <img src="https://apstatic.lomastravel.com.mx/800/_640a1b562fed5__6406123aa0128_chichen_itza_oct_20226.jpg"
+                    alt="Chichén Itzá" height="300px" width="400px">
+            </div>
+        </section>
+
+        <section>
             <h2 id="Machu Picchu">Machu Picchu</h2>
-            <h3>Description</h3>
+
             <p>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a
                 2,430-meter (7,970 ft) mountain ridge.[2][3] Often referred to as the "Lost City of the Incas", it is
                 the most familiar icon of the Inca Empire. It is located in the Machupicchu District within Urubamba
@@ -276,16 +313,22 @@
                 1420–1532.[11] Historical research published in 2022 claims that the site was probably called Huayna
                 Picchu by the Inca, as it exists on the smaller peak of the same name.[12][13]
             </p>
-            <img src="https://lp-cms-production.imgix.net/news/2018/03/GettyImages-573103543.jpg" alt="Machu Picchu"
-                height="300px" width="400px">
-            <img src="https://lp-cms-production.imgix.net/2020-10/500pxRF_16641625.jpg" alt="Machu Picchu"
-                height="300px" width="400px">
-            <img src="https://cdn.britannica.com/25/180725-050-03DE70E6/area-Machu-Picchu-Peru.jpg" alt="Machu Picchu"
-                height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="machu-picchu-gallery">
+                <img src="https://lp-cms-production.imgix.net/news/2018/03/GettyImages-573103543.jpg" alt="Machu Picchu"
+                    height="300px" width="400px">
+
+                <img src="https://lp-cms-production.imgix.net/2020-10/500pxRF_16641625.jpg" alt="Machu Picchu"
+                    height="300px" width="400px">
+
+                <img src="https://cdn.britannica.com/25/180725-050-03DE70E6/area-Machu-Picchu-Peru.jpg"
+                    alt="Machu Picchu" height="300px" width="400px">
+            </div>
+        </section>
+
+        <section>
             <h2 id="Taj Mahal">Taj Mahal</h2>
-            <h3>Description</h3>
+
             <p>The Taj Mahal (/ˌtɑːdʒ məˈhɑːl, ˌtɑːʒ-/; lit. 'Crown of the Palace')[4][5][6] is an ivory-white marble
                 mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in
                 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife,
@@ -304,16 +347,22 @@
                 attracts more than 6 million visitors a year[3] and in 2007, it was declared a winner of the New 7
                 Wonders of the World (2000–2007) initiative.
             </p>
-            <img src="https://img.itinari.com/activity/images/original/d2742c8b-6ed2-44c3-9bc6-5ece5e6f12f8-taj-mahal-1.jpg?ch=DPR&dpr=2.625&w=1200&h=800&s=dc16a1a99aa37ff20f53058c6ccfcaca"
-                alt="Taj Mahal" height="300px" width="400px">
-            <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/11/23134820/Shah-Jahan-may-have-spent-nearly-Rs-70-billion-to-build-the-Taj-Mahal-FB-1200x700-compressed-686x400.jpg"
-                alt="Taj Mahal" height="300px" width="400px">
-            <img src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/08/Agra-India-Taj-Mahal-reflected-in-Yamuna-River-in-late-afternoon-light_Credit_Alamy_A5CKE0.jpg?w=780&quality=75&strip=all"
-                alt="Taj Mahal" height="300px" width="400px">
-        </div>
-        <div>
+
+            <div class="taj-mahal-gallery">
+                <img src="https://img.itinari.com/activity/images/original/d2742c8b-6ed2-44c3-9bc6-5ece5e6f12f8-taj-mahal-1.jpg?ch=DPR&dpr=2.625&w=1200&h=800&s=dc16a1a99aa37ff20f53058c6ccfcaca"
+                    alt="Taj Mahal" height="300px" width="400px">
+
+                <img src="https://assets-news.housing.com/news/wp-content/uploads/2020/11/23134820/Shah-Jahan-may-have-spent-nearly-Rs-70-billion-to-build-the-Taj-Mahal-FB-1200x700-compressed-686x400.jpg"
+                    alt="Taj Mahal" height="300px" width="400px">
+
+                <img src="https://www.thetimes.co.uk/travel/wp-content/uploads/sites/6/2022/08/Agra-India-Taj-Mahal-reflected-in-Yamuna-River-in-late-afternoon-light_Credit_Alamy_A5CKE0.jpg?w=780&quality=75&strip=all"
+                    alt="Taj Mahal" height="300px" width="400px">
+            </div>
+        </section>
+
+        <section>
             <h2 id="Christ the Redeemer">Christ the Redeemer</h2>
-            <h3>Description</h3>
+
             <p>Christ The Redeemer (Portuguese: Cristo Redentor, standard Brazilian Portuguese: [ˈkɾistu ʁedẽˈtoʁ]) is
                 an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor Paul Landowski
                 and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert
@@ -328,14 +377,20 @@
                 Janeiro. A symbol of Christianity around the world, the statue has also become a cultural icon of both
                 Rio de Janeiro and Brazil and was voted one of the New Seven Wonders of the World.[6]
             </p>
-            <img src="https://www.onthegotours.com/blog/wp-content/uploads/2019/03/Aerial-view-of-Christ-the-Redeemer-and-Rio-de-Janeiro-city-Brazil.jpg"
-                alt="Christ the Redeemer" height="300px" width="400px">
-            <img src="https://www.churchtimes.co.uk/media/5682826/istock-1092318084-20211006152544135_web.jpg?anchor=center&mode=crop&width=818&height=500&rnd=132780917770000000"
-                alt="Christ the Redeemer" height="300px" width="400px">
-            <img src="https://www.pandotrip.com/wp-content/uploads/2022/07/Christ-the-Redeemer-Rio-de-Janeiro-Brazil.jpg"
-                alt="Christ the Redeemer" height="300px" width="400px">
-        </div>
+
+            <div class="christ-the-redeemer">
+                <img src="https://www.onthegotours.com/blog/wp-content/uploads/2019/03/Aerial-view-of-Christ-the-Redeemer-and-Rio-de-Janeiro-city-Brazil.jpg"
+                    alt="Christ the Redeemer" height="300px" width="400px">
+
+                <img src="https://www.churchtimes.co.uk/media/5682826/istock-1092318084-20211006152544135_web.jpg?anchor=center&mode=crop&width=818&height=500&rnd=132780917770000000"
+                    alt="Christ the Redeemer" height="300px" width="400px">
+
+                <img src="https://www.pandotrip.com/wp-content/uploads/2022/07/Christ-the-Redeemer-Rio-de-Janeiro-Brazil.jpg"
+                    alt="Christ the Redeemer" height="300px" width="400px">
+            </div>
+        </section>
     </article>
+
     <footer>
         &copy; All rights reserved!
     </footer>
