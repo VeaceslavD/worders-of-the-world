@@ -9,29 +9,29 @@ body {
 }
 
 .page-header {
-  height: 70%;
   background-image: url(https://img.freepik.com/premium-photo/empty-road-big-house-city-background_250469-6446.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .page-header .page-header-overlay {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 100px;
   background-color: rgba(0, 0, 0, 0.438);
-  height: 100%;
+  padding: 20px 80px;
 }
+
 .page-header .page-header-overlay .page-header-text {
-  width: 1440px;
-  height: 40%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
 }
+
 .page-header .page-header-overlay .page-header-text .page-header-title {
   display: flex;
   flex-direction: column;
@@ -39,19 +39,29 @@ body {
   align-items: center;
   gap: 20px;
 }
+
+.page-header .page-header-overlay .fa-bars {
+  display: none;
+  font-size: 30px;
+  color: #dddddd;
+}
+
 .page-header h1 {
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .page-header h2 {
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .page-header .page-header-overlay .page-header-text .search {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
+
 .page-header .page-header-overlay .page-header-text .search input {
   display: flex;
   width: 290px;
@@ -61,6 +71,7 @@ body {
   background: rgba(243, 238, 232, 0.3);
   border: 0;
 }
+
 .page-header .page-header-overlay .page-header-text .search input::placeholder {
   display: flex;
   width: 266px;
@@ -71,6 +82,7 @@ body {
   line-height: 25px;
   border: 0;
 }
+
 .page-header .page-header-overlay .page-header-text .search button {
   display: flex;
   width: 140px;
@@ -84,13 +96,16 @@ body {
   cursor: pointer;
   border: 0;
 }
+
 .page-header .page-header-overlay .navigation-bar {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
+
 .page-header .page-header-overlay .navigation-bar .places {
   height: 300px;
   width: 250px;
@@ -101,11 +116,13 @@ body {
   align-items: center;
   gap: 30px;
 }
+
 .page-header .page-header-overlay .navigation-bar .places img {
   height: 200px;
   width: 250px;
   border-radius: 12px 12px 0 0;
 }
+
 .page-header .page-header-overlay .navigation-bar .places a {
   color: whitesmoke;
   padding: 10px;
@@ -117,6 +134,7 @@ body {
   background-color: black;
   border-radius: 10px;
 }
+
 .summary-article {
   display: flex;
   flex-direction: column;
@@ -124,70 +142,86 @@ body {
   align-items: center;
   padding: 100px 0px;
 }
+
 .summary-article .table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 60%;
 }
+
 .summary-article .table .table-header {
   background-color: black;
   height: 60px;
 }
+
 .summary-article .table .table-header th {
   color: #dddddd;
   font-size: 20px;
 }
+
 .summary-article .table td,
 th {
   border-bottom: 1px solid #dddddd;
   text-align: center;
   padding: 8px;
 }
+
 .summary-article .table tr:nth-child(even) {
   background-color: #dddddd;
 }
+
 .wonders {
-  height: 800px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+  justify-content: center;
   background-color: #f3eee8;
   padding: 50px 80px;
 }
-.wonders .wonders-info {
+
+.wonders .wonders-container {
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.wonders .wonders-info {
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  max-width: 400px;
 }
+
 .wonders .wonders-info h2 {
-  color: var(--brown-dark, #534b42);
-  font-size: 40px;
+  color: #534b42;
+  font-size: 30px;
   font-weight: 300;
   line-height: 40px;
   letter-spacing: -0.3px;
 }
+
 .wonders .wonders-info a {
-  color: var(--terracotta, #a06056);
+  color: #a06056;
   font-size: 17px;
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 0.3px;
   text-decoration: none;
 }
+
 .wonders .wonders-info p {
   display: flex;
   flex-direction: column;
-  color: var(--brown-light, rgba(112, 100, 88, 0.9));
-  font-size: 18px;
+  color: rgba(112, 100, 88, 0.9);
+  font-size: 14px;
   line-height: 25px;
 }
+
 .wonders img {
-  height: 400px;
-  width: 500px;
+  max-height: 300px;
+  max-width: 100%;
   border-radius: 12px;
 }
 
@@ -197,4 +231,37 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .page-header .page-header-overlay {
+    padding: 20px;
+  }
+  .page-header .page-header-overlay .page-header-text {
+    flex-direction: column;
+  }
+
+  .page-header .page-header-overlay .page-header-text .search {
+    flex-direction: column;
+  }
+  
+  .page-header .page-header-overlay .page-header-text .search input {
+    width: 100%;
+  }
+
+  .page-header .page-header-overlay .page-header-text .search button {
+    width: 100%;
+  }
+
+  .page-header .page-header-overlay .fa-bars {
+    display: block;
+  }
+
+  .page-header .page-header-overlay .navigation-bar {
+    display: none;
+  }
+
+  .wonders {
+    padding: 80px 20px;
+  }
 }
